@@ -4,7 +4,6 @@ services:
         image: mysql:5.7
         volumes:
             - "./.data/db:/var/mysql"
-        restart: always
         environment:
             MYSQL_ROOT_PASSWORD: root
             MYSQL_DATABASE: mydb
@@ -21,6 +20,5 @@ services:
             - db
         ports:
             - "8001:80"
-        restart: always
 
 
